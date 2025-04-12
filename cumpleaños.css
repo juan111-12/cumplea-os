@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Fondo de estrellas animadas */
+body::before {
+    content: "⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️";
+    font-size: 2rem;
+    color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    white-space: nowrap;
+    animation: estrellasAnim 15s linear infinite;
+}
+
+@keyframes estrellasAnim {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(30%); }
+}
+
+header {
+    background-color: black;
+    padding: 30px 20px;
+    border-bottom: 5px double red;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3em;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 8px red;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+.invitacion {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 700px;
+    background: linear-gradient(145deg, #fff, #ffecec);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid red;
+}
+
+.invitacion p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.boton {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.4s ease;
+    box-shadow: 0 0 12px red;
+}
+
+.boton:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 20px red;
+    transform: scale(1.08);
+}
+
+.playlist {
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.playlist h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: black;
+    font-family: 'Rock Salt', cursive;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagenes img {
+    width: 160px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.imagenes img:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 0 20px red;
+}
+
+/* Contador */
+.contador {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: #fff1f1;
+    color: red;
+    padding: 15px 25px;
+    border-radius: 12px;
+    margin: 20px auto;
+    display: inline-block;
+    animation: pulseContador 1.5s infinite;
+    box-shadow: 0 0 10px #ff000066;
+}
+
+@keyframes pulseContador {
+    0% { transform: scale(1); box-shadow: 0 0 5px red; }
+    50% { transform: scale(1.05); box-shadow: 0 0 20px red; }
+    100% { transform: scale(1); box-shadow: 0 0 5px red; }
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 25px;
+    font-weight: bold;
+    border-top: 5px double red;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    .invitacion {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .boton {
+        padding: 12px 20px;
+    }
+
+    .imagenes img {
+        width: 100px;
+    }
+}
