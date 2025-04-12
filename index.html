@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Los 15 de Agustina</title>
+  <link rel="stylesheet" href="cumpleaños.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #111;
+      text-align: center;
+      padding: 20px;
+      animation: aparecer 2s ease;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background: linear-gradient(to right, #ff0000, #000);
+      color: #fff;
+      padding: 30px 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    .invitacion p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .boton, .boton-compartir {
+      display: inline-block;
+      background-color: #ff0000;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .boton:hover, .boton-compartir:hover {
+      background-color: #cc0000;
+      transform: translateY(-3px);
+    }
+
+    #contador {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #e60000;
+      margin: 15px 0;
+    }
+
+    .playlist h2 {
+      margin: 40px 0 20px;
+      font-style: italic;
+      color: #444;
+    }
+
+    .imagenes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .imagenes img {
+      width: 180px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    }
+
+    .frases {
+      margin: 40px 0;
+      font-style: italic;
+      color: #444;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    /* Estilos para el link de cada álbum */
+    .playlist a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎉 LOS 15 DE AGUSTINA 🎸</h1>
+</header>
+
+<section class="invitacion">
+  <p>¡Prepárate para una noche inolvidable de rock y fiesta! 🎶</p>
+  <p><strong>📅 Fecha:</strong> 08/11/2025</p>
+  <p><strong>🕘 Hora:</strong> 21:45 PM a 5:00 AM</p>
+  <p><strong>📍 Lugar:</strong> Fautino Eventos</p>
+
+  <h2>⏳ Falta para la gran noche:</h2>
+  <div id="contador">Cargando...</div>
+
+  <a href="https://wa.me/3513883632?text=¡Hola! Quiero confirmar mi asistencia a tu fiesta, Agus."
+     class="boton" target="_blank">
+    ✅ Confirmar Asistencia
+  </a>
+</section>
+
+<section class="playlist">
+  <h2>🎧 Cada canción marca un momento… y esta noche el rock escribe mi historia.</h2>
+  <div class="imagenes">
+    <a href="https://www.youtube.com/playlist?list=OLAK5uy_m8FGypnXYpDRf9TIN-SbD8lEJuZKsRsNY" target="_blank">
+      <img src="cerati.jpg" alt="Cerati - Álbum">
+    </a>
+    <a href="https://youtube.com/playlist?list=PLWVo2tank-zyJMXI-0JP7ZVEt4fOmvDEn&si=s5DBcbci_ATKb52H" target="_blank">
+      <img src="locas.jpg" alt="Viejas Locas - Álbum">
+    </a>
+    <a href="https://youtube.com/playlist?list=OLAK5uy_koAc19Z73y_kd3rFwGYYDdIijuydzkYTo&si=UXYj3J3BkteMo4_V" target="_blank">
+      <img src="babasonico.jpg" alt="Babasónicos - Álbum">
+    </a>
+    <a href="https://www.spotify.com/album/ciro" target="_blank">
+      <img src="ciro.jpg" alt="Ciro y Los Persas - Álbum">
+    </a>
+    <a href="https://youtube.com/playlist?list=OLAK5uy_n_OKPdFAUEVwmj8vsABQZrKonvAWtw9zk&si=fsjnJjjuhOt4cwYa" target="_blank">
+      <img src="intoxicados.jpg" alt="Intoxicados - Álbum">
+    </a>
+    <a href="https://youtube.com/playlist?list=OLAK5uy_mUTOGe59l2SBB1OxdNGXXlJHxs-xzy5xg&si=YZ5TRbHWpLAQTz1s" target="_blank">
+      <img src="spinetta.jpg" alt="Spinetta - Álbum">
+    </a>
+    <a href="https://youtube.com/playlist?list=OLAK5uy_nwO86MF7WY-MtfbU3SNwuqmsxMn9KF8Mg&si=bj8qP1eQRf5S3CYv" target="_blank">
+      <img src="dividios.jpg" alt="Divididos - Álbum">
+    </a>
+  </div>
+</section>
+
+<section class="frases">
+  <p>🎤 “Gracias totales.” – Soda Stereo</p>
+  <p>🎸 “La vida es un carnaval.” – Celia Cruz</p>
+</section>
+
+<footer>
+  <p>¡Nos vemos en la fiesta! 🤘</p>
+</footer>
+
+<audio id="riffGuitarra" src="sonido.mp3" preload="auto"></audio>
+
+<script>
+  // Sonido rockero al primer clic
+  document.addEventListener("click", function () {
+    const audio = document.getElementById("riffGuitarra");
+    if (audio.paused) {
+      audio.play().catch(e => console.log("Error al reproducir sonido:", e));
+    }
+  }, { once: true });
+
+  // Contador regresivo
+  const eventoFecha = new Date("2025-11-08T21:45:00").getTime();
+  const contador = document.getElementById("contador");
+
+  const actualizarContador = () => {
+    const ahora = new Date().getTime();
+    const diferencia = eventoFecha - ahora;
+
+    if (diferencia <= 0) {
+      contador.innerHTML = "¡Es hoy! 🎉";
+      return;
+    }
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    contador.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+  };
+
+  setInterval(actualizarContador, 1000);
+  actualizarContador();
+</script>
+
+</body>
+</html>
